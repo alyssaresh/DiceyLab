@@ -30,18 +30,8 @@ public class Simulation {
                 starString.append("*");
 
             }
-            System.out.printf("%2d : %8d: %.2f %s\n", i, results, percentage, starString.toString());
+            System.out.printf("%2d : %8d: %.2f %s\n", i, results, percentage, starString);
         }
         }
-
-    public String getStars(int value){
-        String starString = "";
-        for (int i = 0; i<=value; i++){
-            int numOfStars = value/numberOfTosses;
-            for (int j = 0; j <= numOfStars; j++){
-                starString += "*";
-            }
-        } return starString;
-    }
 
 }
